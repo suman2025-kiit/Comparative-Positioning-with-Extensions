@@ -19,3 +19,8 @@ cd fabric
 cd ethereum
 
 sudo ./ install.sh
+
+### Installation of Hyperledger Indy platform for starting the system pool for AnonCreds
+starting with a pre-configured docker image:
+
+docker run -itd -p 9701-9708: 9701-9708 ghoshbishakh/indy_pool
