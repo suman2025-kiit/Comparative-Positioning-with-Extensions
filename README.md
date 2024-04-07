@@ -9,4 +9,5 @@ docker-compose down
 
 ## Installation of Hyperledger Fabric platform 
 cd fabric
+
 ./ install.sh
