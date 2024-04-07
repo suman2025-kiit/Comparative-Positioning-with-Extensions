@@ -24,3 +24,7 @@ sudo ./ install.sh
 starting with a pre-configured docker image:
 
 docker run -itd -p 9701-9708: 9701-9708 ghoshbishakh/indy_pool
+
+Clone Indy node repository for starting the repository
+
+git clone https://github.com/hyperledger/indy-node.git
