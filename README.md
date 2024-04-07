@@ -1,4 +1,4 @@
-Setup
+# Setup
 
 Start Docker with the following command
 
