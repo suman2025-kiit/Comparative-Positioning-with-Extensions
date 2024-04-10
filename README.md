@@ -65,3 +65,7 @@ docker run -itd -p 9701-9708: 9701-9708 ghoshbishakh/indy_pool
 Clone Indy node repository for starting the repository
 
 git clone https://github.com/hyperledger/indy-node.git
+
+
+### For running the Caliper sut configuration of thr benchmark and generate the report in tabular format using Prometheus, run the following command after Hyperledger caliper installation
+npx caliper launch manager --caliper-bind-sut fabric:2.2 --caliper-workspace . --caliper-benchconfig benchmarks/scenario/simple/config.yaml --caliper-networkconfig networks/fabric/test-network.yaml
