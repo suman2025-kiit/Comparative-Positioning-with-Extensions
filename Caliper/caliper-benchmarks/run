@@ -1,0 +1,5 @@
+npx caliper launch manager \
+	--caliper-bind-sut fabric:2.2 \
+	--caliper-workspace . \
+	--caliper-benchconfig benchmarks/scenario/simple/config.yaml \ 
+	--caliper-networkconfig networks/fabric/test-network.yaml
