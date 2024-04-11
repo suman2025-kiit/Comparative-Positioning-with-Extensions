@@ -71,20 +71,20 @@ docker build -f ci/indy-pool.dockerfile -t indy_pool.
 
 docker run -itd -p 9701-9708: 9701-9708 ghoshbishakh/indy_pool
 
-This will make an indy container for the poll of system generated validators in which all the pre-defined authenticated validators with proper identity and pool number ans assigned the specific port number within the range 9701-9708.
+This creates an Indy container housing a pool of system-validated authenticators, each with a unique identity, pool number, and assigned port between 9701-9708.
 
-c.Then run docker ps , to get the container identity forexample in our case it is 351k39691g56. 
+c.Then run-  docker ps , to get the container identity forexample in our case it is 351k39691g56. 
 Then go inside the indy pool docker container  using the command - docker exec -it 351k39691g56 bash
 
-d.Now go inside the container 351k39691g56 and run the command - cat /var/lib/indy/sandbox/pool_transactions_genesis                                              
+d. Now go inside the container 351k39691g56 and run the command - cat /var/lib/indy/sandbox/pool_transactions_genesis                                              
 to get the details information of each validator nodes.
 
-e.Now open a terminal and copy the information of all the information of validators nodes in to an text editotor that is opened using the command -'code.'.
+e. Now open a terminal and copy the information of all the information of validators nodes in to an text editotor that is opened using the command -'code.'.
 and past all the information into the text editor and save it as 'pool1.txn' that is basically a type of JSON file for communication with the AnonCreds main code.
 
-f. Then import the coding -"main21.py" inside the same same folder of the editor where 'pool1.txn' file is located for intregation of Hyperledger AnonCreds functionality coorordinating with the pool for generation of Dinamic Identities, Wallet address and other required verifiable credentials for proper validation of the anonymous participants in the marketplace. 
+f. Import "main21.py" into the folder containing 'pool1.txn' to integrate Hyperledger AnonCreds for generating dynamic IDs, wallet addresses, and verifiable credentials for anonymous marketplace participant validation.
 
-g. Now import the coding -"main30.py" and "Registrationcontract.sol" and inside the same same folder of the editor where 'pool1.txn' file is located and run the code "main30.py" for proper validation of the generated dynamic identities and wallet addresse and based on successful validation further the registration procedure is done for the participant for the marketplace.
+g. Now Import "main30.py" and "Registrationcontract.sol" into the editor's folder containing 'pool1.txn', then execute "main30.py" to validate dynamic identities and wallet addresses before registering marketplace participants.
 
 All such coding related the aforesaid procedure is already uploaded under the path -  ### smajumder/did_wallet_management/indy-sdk/
 
