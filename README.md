@@ -94,7 +94,7 @@ a. First install the open source softwares python 3.6, Jupiter Note book and Pan
 
 b. The relevant information is uploaded into seperate CSV files those contains ’bidding information and price’ linked to the DID, Wallet Address ’listing information along with the current price of the dNFT,’ ’Owner and Creator information of the dNFT,’ ’minting information of the dNFT,’ etc. for efficient data exchange  (as uploaded under the path - ### smajumder/Meritrank/NFT/data/ ).
 
-c. Subsequently, a .JSON file is generated from this .CSV files and it is further formatted as a milti-directed weighted graph MDG (V,E), where node V is tied to a uniqued dynamic wallet address and the directed edge E represents the token movement from node Vi to Vj. This grapg is generated using 'hitting_time.py', 'random_walks.py' and other releted files and uploaded under the path - ### smajumder/Meritrank/NFT/Trust/ .
+c. Subsequently, a .JSON file is generated from this .CSV files and it is further formatted as a milti-directed weighted graph MDG (V,E), where node V is tied to a uniqued dynamic wallet address and the directed edge E represents the token movement from node Vi to Vj. This grapg is generated using 'hitting_time.py', 'random_walks.py' and other releted files and uploaded under the path - ### smajumder/Meritrank/NFT/Trust/.
 
 
 
