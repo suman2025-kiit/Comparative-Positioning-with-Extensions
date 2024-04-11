@@ -86,6 +86,8 @@ f. Then import the coding -"main21.py" inside the same same folder of the editor
 
 g. Now import the coding -"main30.py" and "Registrationcontract.sol" and inside the same same folder of the editor where 'pool1.txn' file is located for proper validation of the generated dynamic identities and wallet addresse and based on successful validation further the registration procedure is done for the participant for the marketplace.
 
+All such coding related the aforesaid procedure is already uploaded under the path -  smajumder/did_wallet_management/indy-sdk/
+
 
 ### Installation of Hyperledger Caliper platform, please follow the steps as mentioned in the detailed link
 https://hyperledger.github.io/caliper/v0.5.0/installing-caliper/
