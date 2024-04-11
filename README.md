@@ -3,14 +3,14 @@ We have used 18.04.4 Bionic, Pandas, Python 3.6,Jupyter Notebook and Hyperledger
 But AnonCreds 1.0 basically works coordinating with Hyperledger Indy platform for generation of Indy System Pool for predefined verifiers for Aoncreds Issuers and verrifiers assisgning verifier roles -such as Trust Anchor (role ’101’)
 or Trustee(role ’0’) respectively from the Indy system pool using Nym Transactions as implemented in the coding (main21.py program (attached herewith ) for generation of DID, Wallet address and VC).
 
-### Start Docker with the following command
+ ### 1. Start Docker with the following command
 
 docker-compose up-d
 
 ### to stop the docker after experiment 
 docker-compose down
 
-### Installation of Hyperledger Fabric platform 
+### 2. Installation of Hyperledger Fabric platform 
 cd fabric
 
 ./ install.sh
@@ -52,20 +52,20 @@ export CORE_PEER_MSPCONFIGPATH=${PWD}/organizations/peerOrganizations/org1.examp
 
 export CORE_PEER_ADDRESS=localhost:7051
 
-### Installation of Ethereum platform 
+### 3. Installation of Ethereum platform 
 cd ethereum
 
 sudo ./ install.sh
 
-### Installation of Hyperledger Indy platform for starting the system pool for AnonCreds
+### 4. Installation of Hyperledger Indy platform for starting the system pool for AnonCreds
 
-1.First clone Indy node repository for starting the repository using the commands- 
+a.First clone Indy node repository for starting the repository using the commands- 
 
 git clone https://github.com/hyperledger/indy-node.git 
 
 Then go inside the directory using the command - cd indy-sdk
 
-2. starting with a pre-configured docker image to build and run it for the pool:
+b. starting with a pre-configured docker image to build and run it for the pool:
    
 docker build -f ci/indy-pool.dockerfile -t indy_pool.
 
@@ -73,14 +73,16 @@ docker run -itd -p 9701-9708: 9701-9708 ghoshbishakh/indy_pool
 
 This will make an indy container for the poll of system generated validators in which all the pre-defined authenticated validators with proper identity and pool number ans assigned the specific port number within the range 9701-9708.
 
-Then run docker ps , to get the container identity forexample in our case it is 351k39691g56. 
+c.Then run docker ps , to get the container identity forexample in our case it is 351k39691g56. 
 Then go inside the indy pool docker container  using the command - docker exec -it 351k39691g56 bash
 
-Now go inside the container 351k39691g56 and run the command - cat /var/lib/indy/sandbox/pool_transactions_genesis                                              
+d.Now go inside the container 351k39691g56 and run the command - cat /var/lib/indy/sandbox/pool_transactions_genesis                                              
 to get the details information of each validator nodes.
 
-Now open a terminal and copy the information of all the information of validators nodes in to an text editotor that is opened using the command -'code.'.
-and past all the information into the text editor and save it as pool1.txn that is basically a type of JSON file for communication with the AnonCreds main code.
+e.Now open a terminal and copy the information of all the information of validators nodes in to an text editotor that is opened using the command -'code.'.
+and past all the information into the text editor and save it as 'pool1.txn' that is basically a type of JSON file for communication with the AnonCreds main code.
+
+f. Then import the coding -"main21.py" inside the same same folder of the editor where 'pool1.txn' file is located.
 
 
 
