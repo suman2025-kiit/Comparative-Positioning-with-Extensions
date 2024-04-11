@@ -64,6 +64,14 @@ docker run -itd -p 9701-9708: 9701-9708 ghoshbishakh/indy_pool
 
 This will make an indy container for the poll of system generated validators in which all the pre-defined authenticated validators with proper identity and pool number ans assigned the specific port number within the range 9701-9708.
 
+Then run docker ps , to get the container identity forexample in our case it is 351k39691g56. 
+Then go inside the indy pool docker container  using the command - docker exec -it 351k39691g56 bash
+
+Now go inside the container 351k39691g56 and run the command - cat /var/lib/indy/sandbox/pool_transactions_genesis
+to get the details information of each validator notes.
+
+
+
 Clone Indy node repository for starting the repository
 
 git clone https://github.com/hyperledger/indy-node.git
