@@ -92,9 +92,9 @@ All such coding related the aforesaid procedure is already uploaded under the pa
 
 a. First install the open source softwares python 3.6, Jupiter Note book and Pandas for smoot running and generation of reputation graphs from the wallet address based on the details provided by the dNFT  tokens.
 
-b. The relevant information is uploaded into seperate CSV files those contains ’bidding information and price’ linked to the DID, ’listing information along with the current price of the dNFT,’ ’Owner and Creator information of the dNFT,’ ’minting information of the dNFT,’ etc. for efficient data exchange  (as uploaded under the path - ### smajumder/Meritrank/NFT/data/ ).
+b. The relevant information is uploaded into seperate CSV files those contains ’bidding information and price’ linked to the DID, Wallet Address ’listing information along with the current price of the dNFT,’ ’Owner and Creator information of the dNFT,’ ’minting information of the dNFT,’ etc. for efficient data exchange  (as uploaded under the path - ### smajumder/Meritrank/NFT/data/ ).
 
-c. 
+c. Subsequently, a .JSON file is generated from this .CSV files and it is further formatted as a milti-directed weighted graph MDG (V,E), where node V is tied to a uniqued dynamic wallet address and the directed edge E represents the token movement from node Vi to Vj.
 
 
 
