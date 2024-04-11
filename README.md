@@ -58,6 +58,10 @@ cd ethereum
 sudo ./ install.sh
 
 ### Installation of Hyperledger Indy platform for starting the system pool for AnonCreds
+
+First clone Indy node repository for starting the repository using the commands-                                                                                  git clone https://github.com/hyperledger/indy-node.git
+cd indy-sdk
+
 starting with a pre-configured docker image:
 
 docker run -itd -p 9701-9708: 9701-9708 ghoshbishakh/indy_pool
@@ -75,9 +79,7 @@ and past all the information into the text editor and save it as pool1.txn that 
 
 
 
-Clone Indy node repository for starting the repository
 
-git clone https://github.com/hyperledger/indy-node.git
 
 ### Installation of Hyperledger Caliper platform, please follow the steps as mentioned in the detailed link
 https://hyperledger.github.io/caliper/v0.5.0/installing-caliper/
