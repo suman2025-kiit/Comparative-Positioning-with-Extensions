@@ -59,8 +59,10 @@ sudo ./ install.sh
 
 ### Installation of Hyperledger Indy platform for starting the system pool for AnonCreds
 
-First clone Indy node repository for starting the repository using the commands-                                                                                  git clone https://github.com/hyperledger/indy-node.git
-cd indy-sdk
+First clone Indy node repository for starting the repository using the commands- 
+
+git clone https://github.com/hyperledger/indy-node.git                                                                                                          cd indy-sdk
+
 
 starting with a pre-configured docker image:
 
