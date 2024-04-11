@@ -88,6 +88,16 @@ g. Now import the coding -"main30.py" and "Registrationcontract.sol" and inside 
 
 All such coding related the aforesaid procedure is already uploaded under the path -  ### smajumder/did_wallet_management/indy-sdk/
 
+### 4. Installation of python 3.6, Jupiter Note book and Pandas for running the graph generated from the dNFT Tokens 
+a. First install the open source softwares python 3.6, Jupiter Note book and Pandas for smoot running and generation of reputation graphs from the wallet address based on the details provided by the dNFT  tokens.
+b. 
+
+
+
+
+
+
+
 
 ### Installation of Hyperledger Caliper platform, please follow the steps as mentioned in the detailed link
 https://hyperledger.github.io/caliper/v0.5.0/installing-caliper/
