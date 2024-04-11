@@ -101,15 +101,16 @@ c. Subsequently, a .JSON file is generated from this .CSV files and it is furthe
 
 d. Now generate the files read_data.py and the main file 'NFT_mail_file.ipynb' as uploaded in the path ### smajumder/Meritrank/NFT/ and run main file 'NFT_mail_file.ipynb' for generation of the outputs as shown in from Figures 2 to Figere 10 in the Manuscript. 
 
+### 6. Installation of Hyperledger Caliper platform, please follow the steps as mentioned in the detailed link
 
-
-
-
-
-
-
-### Installation of Hyperledger Caliper platform, please follow the steps as mentioned in the detailed link
+a.Please follow the installation procedure as mentioned in the link below:
 https://hyperledger.github.io/caliper/v0.5.0/installing-caliper/
 
-### For running the Caliper sut configuration of thr benchmark and generate the report in tabular format using Prometheus, run the following command after Hyperledger caliper installation
+### 7. For running the Caliper sut configuration of thr benchmark and generate the report in tabular format using Prometheus, run the following command in Hyperledger caliper platform 
+
+a. Please the upload the files as mentioned in the paths ### - smajumder/Caliper/caliper-benchmarks/ 
+and smajumder/fabric/ .
+
+b. Run the following command for generation of reports in 'Prometheus' as shown in Figures 11 and Figure 12 respectively in the manuscript.
+
 npx caliper launch manager --caliper-bind-sut fabric:2.2 --caliper-workspace . --caliper-benchconfig benchmarks/scenario/simple/config.yaml --caliper-networkconfig networks/fabric/test-network.yaml
