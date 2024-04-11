@@ -10,7 +10,10 @@ docker-compose up-d
 ### to stop the docker after experiment 
 docker-compose down
 
-### 2. Installation of Hyperledger Fabric platform 
+### 2. Installation 
+But AnonCreds 1.0 basically works coordinating with Hyperledger Indy platform for generation of Indy System Pool for predefined verifiers for Aoncreds Issuers and verrifiers assisgning verifier roles -such as Trust Anchor (role ’101’)
+or Trustee(role ’0’) respectively from the Indy system pool using Nym Transactions as implemented in the coding (main21.py program (attached herewith ) for generation of DID, Wallet address and VC).
+of Hyperledger Fabric platform 
 cd fabric
 
 ./ install.sh
@@ -95,6 +98,8 @@ a. First install the open source softwares python 3.6, Jupiter Note book and Pan
 b. The relevant information is uploaded into seperate CSV files those contains ’bidding information and price’ linked to the DID, Wallet Address ’listing information along with the current price of the dNFT,’ ’Owner and Creator information of the dNFT,’ ’minting information of the dNFT,’ etc. for efficient data exchange  (as uploaded under the path - ### smajumder/Meritrank/NFT/data/ ).
 
 c. Subsequently, a .JSON file is generated from this .CSV files and it is further formatted as a milti-directed weighted graph MDG (V,E), where node V is tied to a uniqued dynamic wallet address and the directed edge E represents the token movement from node Vi to Vj. This grapg is generated using 'hitting_time.py', 'random_walks.py' and other releted files and uploaded under the path - ### smajumder/Meritrank/NFT/Trust/.
+
+d. Now generate the files read_data.py and the main file 'NFT_mail_file.ipynb' as uploaded in the path ### smajumder/Meritrank/NFT/ and run main file 'NFT_mail_file.ipynb' for generation of the outputs as shown in from Figures 2 to Figere 10 in the Manuscript. 
 
 
 
