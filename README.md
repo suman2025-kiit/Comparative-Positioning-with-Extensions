@@ -82,7 +82,7 @@ to get the details information of each validator nodes.
 e.Now open a terminal and copy the information of all the information of validators nodes in to an text editotor that is opened using the command -'code.'.
 and past all the information into the text editor and save it as 'pool1.txn' that is basically a type of JSON file for communication with the AnonCreds main code.
 
-f. Then import the coding -"main21.py" inside the same same folder of the editor where 'pool1.txn' file is located.
+f. Then import the coding -"main21.py" inside the same same folder of the editor where 'pool1.txn' file is located for intregation of Hyperledger AnonCreds functionality coorordinating with the pool for generation of Dinamic Identities, Wallet address and other required verifiable credentials for proper validation of the anonymous participants in the marketplace. 
 
 
 
