@@ -9,10 +9,9 @@ docker-compose up-d
 docker-compose down
 
 ### 2. Installation 
-But AnonCreds 1.0 basically works coordinating with Hyperledger Indy platform for generation of Indy System Pool for predefined verifiers for Aoncreds Issuers and verrifiers assisgning verifier roles -such as Trust Anchor (role ’101’)
-or Trustee(role ’0’) respectively from the Indy system pool using Nym Transactions as implemented in the coding (main21.py program (attached herewith ) for generation of DID, Wallet address and VC).
-of Hyperledger Fabric platform 
-cd fabric
+AnonCreds 1.0 collaborates with the Hyperledger Indy platform, creating an Indy System Pool that assigns predefined verifiers, such as Trust Anchors (role '101') and Trustees (role '0'), through Nym Transactions in our main21.py program.
+
+Please go inside path # cd fabric
 
 ./ install.sh
 
