@@ -68,6 +68,7 @@ Then go inside the directory using the command - cd indy-sdk
 2. starting with a pre-configured docker image to build and run it for the pool:
    
 docker build -f ci/indy-pool.dockerfile -t indy_pool.
+
 docker run -itd -p 9701-9708: 9701-9708 ghoshbishakh/indy_pool
 
 This will make an indy container for the poll of system generated validators in which all the pre-defined authenticated validators with proper identity and pool number ans assigned the specific port number within the range 9701-9708.
