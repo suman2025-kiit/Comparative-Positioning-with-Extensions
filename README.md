@@ -72,6 +72,8 @@ to get the details information of each validator notes.
 
 
 
+
+
 Clone Indy node repository for starting the repository
 
 git clone https://github.com/hyperledger/indy-node.git
