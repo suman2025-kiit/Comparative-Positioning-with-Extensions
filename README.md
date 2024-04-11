@@ -84,8 +84,7 @@ and past all the information into the text editor and save it as 'pool1.txn' tha
 
 f. Then import the coding -"main21.py" inside the same same folder of the editor where 'pool1.txn' file is located for intregation of Hyperledger AnonCreds functionality coorordinating with the pool for generation of Dinamic Identities, Wallet address and other required verifiable credentials for proper validation of the anonymous participants in the marketplace. 
 
-
-
+g. Now import the coding -"main30.py" and "Registrationcontract.sol" and inside the same same folder of the editor where 'pool1.txn' file is located for proper validation of the generated dynamic identities and wallet addresse and based on successful validation further the registration procedure is done for the participant for the marketplace.
 
 
 ### Installation of Hyperledger Caliper platform, please follow the steps as mentioned in the detailed link
