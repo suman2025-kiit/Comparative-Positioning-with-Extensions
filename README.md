@@ -68,9 +68,10 @@ Then run docker ps , to get the container identity forexample in our case it is 
 Then go inside the indy pool docker container  using the command - docker exec -it 351k39691g56 bash
 
 Now go inside the container 351k39691g56 and run the command - cat /var/lib/indy/sandbox/pool_transactions_genesis                                              
-to get the details information of each validator notes.
+to get the details information of each validator nodes.
 
-
+Now open a terminal and copy the information of all the information of validators nodes in to an text editotor that is opened using the command -'code.'.
+and past all the information into the text editor and save it as pool1.txn that is basically a type of JSON file for communication with the AnonCreds main code.
 
 
 
