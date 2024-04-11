@@ -57,7 +57,7 @@ cd ethereum
 
 sudo ./ install.sh
 
-### 4. Installation of Hyperledger Indy platform for starting the system pool for AnonCreds
+### 4. Installation of Hyperledger Indy platform for starting the system pool for AnonCreds and run the AnonCreds funcionality under Hyperledger platform
 
 a.First clone Indy node repository for starting the repository using the commands- 
 
