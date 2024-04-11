@@ -96,7 +96,7 @@ b. The relevant information is uploaded in separate CSV files, detailing 'biddin
 
 c. Afterwards, a .JSON file is created from the .CSV files, shaping a multi-directed weighted graph (MDG) with nodes V linked to unique dynamic wallet addresses and edges E depicting token transfers from node Vi to Vj, using scripts like 'hitting_time.py', 'random_walks.py', located at smajumder/Meritrank/NFT/Trust/.
 
-d. Now generate the files read_data.py and the main file 'NFT_mail_file.ipynb' as uploaded in the path ### smajumder/Meritrank/NFT/ and run main file 'NFT_mail_file.ipynb' for generation of the outputs as shown in from Figures 2 to Figere 10 in the Manuscript. 
+d. Create 'read_data.py' and the 'NFT_mail_file.ipynb' as found in the directory smajumder/Meritrank/NFT/, then execute 'NFT_mail_file.ipynb' to produce outputs depicted from Figures 2 to 10 in the manuscript.
 
 ### 6. Installation of Hyperledger Caliper platform, please follow the steps as mentioned in the detailed link
 
