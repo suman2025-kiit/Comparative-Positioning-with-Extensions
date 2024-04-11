@@ -90,11 +90,11 @@ All such coding related the aforesaid procedure is already uploaded under the pa
 
 ### 5. Installation of python 3.6, Jupiter Note book and Pandas for running the graph generated from the dNFT Tokens 
 
-a. First install the open source softwares python 3.6, Jupiter Note book and Pandas for smoot running and generation of reputation graphs from the wallet address based on the details provided by the dNFT  tokens.
+a. Initially, install Python 3.6, Jupyter Notebook, and Pandas to efficiently generate reputation graphs using dNFT token data from wallet addresses.
 
-b. The relevant information is uploaded into seperate CSV files those contains ’bidding information and price’ linked to the DID, Wallet Address ’listing information along with the current price of the dNFT,’ ’Owner and Creator information of the dNFT,’ ’minting information of the dNFT,’ etc. for efficient data exchange  (as uploaded under the path - ### smajumder/Meritrank/NFT/data/ ).
+b. The relevant information is uploaded in separate CSV files, detailing 'bidding and pricing,' linked to dynamically generated DID and Wallet Addresses, 'listing and current dNFT prices,' as well as 'dNFT owner, creator, and minting information,' to facilitate efficient data exchange (located at smajumder/Meritrank/NFT/data/).
 
-c. Subsequently, a .JSON file is generated from this .CSV files and it is further formatted as a milti-directed weighted graph MDG (V,E), where node V is tied to a uniqued dynamic wallet address and the directed edge E represents the token movement from node Vi to Vj. This grapg is generated using 'hitting_time.py', 'random_walks.py' and other releted files and uploaded under the path - ### smajumder/Meritrank/NFT/Trust/.
+c. Afterwards, a .JSON file is created from the .CSV files, shaping a multi-directed weighted graph (MDG) with nodes V linked to unique dynamic wallet addresses and edges E depicting token transfers from node Vi to Vj, using scripts like 'hitting_time.py', 'random_walks.py', located at smajumder/Meritrank/NFT/Trust/.
 
 d. Now generate the files read_data.py and the main file 'NFT_mail_file.ipynb' as uploaded in the path ### smajumder/Meritrank/NFT/ and run main file 'NFT_mail_file.ipynb' for generation of the outputs as shown in from Figures 2 to Figere 10 in the Manuscript. 
 
