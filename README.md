@@ -68,6 +68,7 @@ Then run docker ps , to get the container identity forexample in our case it is 
 Then go inside the indy pool docker container  using the command - docker exec -it 351k39691g56 bash
 
 Now go inside the container 351k39691g56 and run the command - cat /var/lib/indy/sandbox/pool_transactions_genesis
+
 to get the details information of each validator notes.
 
 
