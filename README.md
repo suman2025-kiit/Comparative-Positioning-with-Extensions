@@ -111,3 +111,26 @@ and smajumder/fabric/ .
 b. Run the following command for generation of reports in 'Prometheus' as shown in Figures 11 and Figure 12 respectively in the manuscript.
 
 npx caliper launch manager --caliper-bind-sut fabric:2.2 --caliper-workspace . --caliper-benchconfig benchmarks/scenario/simple/config.yaml --caliper-networkconfig networks/fabric/test-network.yaml
+
+### 8. Run the commands for Comparative-Positioning-with-Extensions for Quantitative Evidence Analysis of proposed scheme using p50/p75/p90/p95/p99, for tht uploafd the file "nftbench25_synthetic_summary.csv" and run the file "nftbench25.py" using the following commands sequentially.
+Public
+ 
+
+Synthetic:
+
+python nftbench25.py --mode synthetic --chain "Polygon (Amoy)" --concurrency 64 --duration 120
+python nftbench25.py --mode synthetic --chain "Solana (devnet)" --concurrency 64 --duration 120
+
+
+Real EVM (after fill the adapter):
+
+sudo python nftbench25.py --mode evm --chain "Polygon (Amoy)" \
+  --rpc http://127.0.0.1:8545 --private-key $DEV_KEY \
+  --iface eth0 --rtt-ms 50 --jitter-ms 5 --concurrency 64 --duration 600
+
+
+Solana devnet (after adapter):
+
+sudo python nftbench25.py --mode solana --chain "Solana (devnet)" \
+  --rpc https://api.devnet.solana.com --iface eth0 --rtt-ms 50 --jitter-ms 5 \
+  --concurrency 64 --duration 600
