@@ -1,3 +1,4 @@
+
 # Initial Setup for execution 
 We employed Bionic 18.04.4, Pandas, Python 3.6, Jupyter Notebook, and Hyperledger AnonCreds 1.0 to create and confirm Dynamic Identities (DID), Wallet addresses, and Verifiable Credentials (VC) for marketplace participants. AnonCreds 1.0 operates with the Hyperledger Indy platform to generate an Indy System Pool, assigning verifier roles like Trust Anchor (role '101') or Trustee (role '0') using Nym Transactions in our main21.py program.
 
@@ -129,8 +130,26 @@ sudo python nftbench25.py --mode evm --chain "Polygon (Amoy)" \
   --iface eth0 --rtt-ms 50 --jitter-ms 5 --concurrency 64 --duration 600
 
 
-Solana devnet (after adapter):
-
 sudo python nftbench25.py --mode solana --chain "Solana (devnet)" \
   --rpc https://api.devnet.solana.com --iface eth0 --rtt-ms 50 --jitter-ms 5 \
   --concurrency 64 --duration 600
+
+
+
+
+## The output Screen shots of the Tables VII, TABLE VIII and Table IX of the Manuscript are attached Below those are generated using  Hyperledger Caliper Platform## 
+
+
+### Output Screenshot of TABLE VII: Dynamic reputation calculation using the ’Listed Event’ from the Listed Event DataFrame###
+![Listed](https://github.com/user-attachments/assets/91e9815d-3373-4f07-bb91-bd3bd92d5479)
+
+### Output Screenshot of TABLE VIII: Dynamic reputation calculation using the ‘PriceChange’ event from the Price Changed Events DataFrame###
+![PriceChange_](https://github.com/user-attachments/assets/daeac683-5e46-43a8-8af1-13cfe63ede09)
+
+
+### Output Screenshot of TABLE IX: Summarized Report obtained from Hyperledger Caliper on ’Average Memory Consumption’, ’Average Latency’, and ’Average TPS’ and summarized report ###
+
+![Memory](https://github.com/user-attachments/assets/0c920125-29a3-4477-8193-86bdb8dfe40e)
+
+![summarised report ](https://github.com/user-attachments/assets/9e295e27-e5dc-4cf8-9de7-573f5e9875d5)
+Solana devnet (after adapter):
